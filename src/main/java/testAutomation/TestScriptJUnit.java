@@ -30,6 +30,8 @@ public class TestScriptJUnit {
 		
 		Assert.assertEquals("Title Matching Assertion", "Register",titleAter);
 		
+		driver.close();
+		
 	}
 	
 	@Test
@@ -51,7 +53,7 @@ public class TestScriptJUnit {
 		Select skillsDropDown = new Select(skillListElement);
 		skillsDropDown.selectByVisibleText("Analytics");
 		
-		
+		driver.close();
 		
 	}
 
